@@ -1,4 +1,4 @@
 # yamalaya.github.io
-for static web pages of yamalaya
 
+#domain 
 url : www.yamalaya.net
