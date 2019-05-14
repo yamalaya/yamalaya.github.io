@@ -1,9 +1,26 @@
 <header class="site-header" role="banner">
-
   <div class="wrapper">
+
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+
+
+<!--language Selector-->
+<nav class="lang-Select">
+   
+    {% if site.lang == "en" %}
+    {% capture link1 %}{{ site.baseurl_root }}/jp{{ page.url  }}{% endcapture %}
+    <a href="{{ link1 }}" >{% t global.japanese %}</a>
+
+    {% elsif site.lang == "jp" %}
+    {% capture link2 %}{{ site.baseurl_root }}{{ page.url}}{% endcapture %}
+    <a href="{{ link2 }}" >{% t global.english %}</a>
+  {% endif %}
+</nav>
+
+
+
 
     {%- if page_paths -%}
       <nav class="site-nav">

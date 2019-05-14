@@ -16,8 +16,8 @@
 title: Yamalaya
 email: yamalaya2019@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  This site is maintained by Yamalaya Multipurposes Private Limited. Plese refer to Contact section
-  for further inquiry.
+  This site is maintained by Yamalaya Multipurposes Private Limited. Please refer to Contact Section
+  for further inquiries.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: 
@@ -28,6 +28,10 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+
+languages: ["en", "jp"]
+exclude_from_localizations: ["javascript", "images", "css"]
+defaultLang: en
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
