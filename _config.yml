@@ -30,8 +30,6 @@ plugins:
   - jekyll-feed
   - jekyll-multiple-languages-plugin
   
-gems:
-   - jekyll-multiple-languages-plugin
 
 languages: ["en", "jp"]
 exclude_from_localizations: ["javascript", "images", "css"]
